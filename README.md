@@ -1,6 +1,6 @@
 # 👋 Hi, I’m Amir
 
-Welcome to my GitHub! I'm a **Certified Network Administrator** with over 5 years of experience in optimizing and securing networks. My expertise lies in **network automation** (Ansible, Docker), **routing and switching** (Cisco, Fortinet), and **firewall configurations** (OPNsense, FortiGate).
+Welcome to my GitHub! I'm a **Certified Network Administrator** with over 5 years of experience in optimizing and securing networks. My expertise lies in **network automation** (Ansible, Docker), **routing and switching** (Cisco), and **firewall configurations** (OPNsense, FortiGate).
 
 ---
 
