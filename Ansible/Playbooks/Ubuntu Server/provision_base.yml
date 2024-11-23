@@ -1,0 +1,63 @@
+---
+- name: Install and configure packages on Server
+  hosts: all
+  become: yes
+  tasks:
+    - name: Update the apt package index
+      apt:
+        update_cache: yes
+
+    - name: Install required packages
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - nano
+        - bash-completion
+        - iputils-ping
+        - net-tools
+        - traceroute
+        - dnsutils
+        - qemu-guest-agent
+        - curl
+        - unzip
+
+    - name: Fix missing packages
+      command: apt-get install --fix-missing
+      ignore_errors: yes
+
+    - name: Determine platform architecture
+      command: uname -m
+      register: architecture
+      changed_when: false
+      check_mode: no
+
+    - name: Determine platform OS
+      command: uname -s
+      register: platform
+      changed_when: false
+      check_mode: no
+
+    - name: Ensure PubkeyAuthentication is set to yes
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^#?PubkeyAuthentication'
+        line: 'PubkeyAuthentication yes'
+        state: present
+        backrefs: yes
+
+    - name: Ensure PasswordAuthentication is set to no
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^#?PasswordAuthentication'
+        line: 'PasswordAuthentication no'
+        state: present
+        backrefs: yes
+
+    - name: Restart SSH service
+      service:
+        name: ssh
+        state: restarted
+        
+    - name: Restart the system
+      reboot:

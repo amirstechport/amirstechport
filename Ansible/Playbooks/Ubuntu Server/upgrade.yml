@@ -1,0 +1,19 @@
+---
+- name: Upgrade all packages on all hosts with sudo
+  hosts: all
+  become: yes
+  become_method: sudo
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Upgrade all packages
+      apt:
+        upgrade: dist
+      register: upgrade_result
+
+    - name: Print upgrade result
+      debug:
+        var: upgrade_result

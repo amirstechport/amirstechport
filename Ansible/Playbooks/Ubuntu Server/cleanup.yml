@@ -1,0 +1,15 @@
+---
+- name: Run apt autoremove and print details
+  hosts: all
+  become: yes
+  become_method: sudo
+  
+  tasks:
+    - name: Run apt autoremove
+      apt:
+        autoremove: yes
+      register: autoremove_result
+
+    - name: Print apt autoremove result
+      debug:
+        var: autoremove_result

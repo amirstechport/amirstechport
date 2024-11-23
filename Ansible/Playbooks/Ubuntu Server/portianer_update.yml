@@ -1,0 +1,33 @@
+---
+- name: Manage Portainer container
+  hosts: all
+  become: yes
+  become_method: sudo
+  tasks:
+
+    - name: Stop Portainer container
+      command: docker stop portainer
+      ignore_errors: yes
+      register: stop_portainer
+
+    - name: Remove Portainer container
+      command: docker rm portainer
+      when: stop_portainer is succeeded
+      ignore_errors: yes
+      register: remove_portainer
+
+    - name: Remove Portainer image
+      command: docker rmi portainer/portainer-ce:latest
+      when: remove_portainer is succeeded
+      ignore_errors: yes
+
+    - name: Run Portainer container
+      command: >
+        docker run -d
+        -p 9000:9000
+        -p 9443:9443
+        --name=portainer
+        --restart=always
+        -v /var/run/docker.sock:/var/run/docker.sock
+        -v portainer_data:/data
+        portainer/portainer-ce:latest
