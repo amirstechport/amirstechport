@@ -1,0 +1,18 @@
+version: "3"
+services:
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - WATCHTOWER_CLEANUP=true
+      - WATCHTOWER_INCLUDE_STOPPED=false
+      - WATCHTOWER_POLL_INTERVAL=86400
+      - WATCHTOWER_WARN_ON_HEAD_FAILURE=never
+      #- WATCHTOWER_POLL_INTERVAL=36001
+      - WATCHTOWER_REVIVE_STOPPED=false
+      - WATCHTOWER_NOTIFICATIONS=slack 
+      - WATCHTOWER_NOTIFICATION_SLACK_HOOK_URL= # add Slack webhook URL
+    restart: unless-stopped
+          
