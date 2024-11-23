@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  caddy:
+    image: caddy:latest
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
+      - 443:443/udp
+    volumes:
+      - /home/caddy/caddy/Caddyfile:/etc/caddy/Caddyfile
+      - /home/caddy/caddy/site:/srv
+      - /home/caddy/caddy/caddy_data:/data
+      - /home/caddy/caddy/caddy_config:/config
+    labels:
+      - com.centurylinklabs.watchtower.monitor-only=true # montior by Watchtower becuase of webhook i get notified of new version
+    network_mode: host

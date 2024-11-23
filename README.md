@@ -1,6 +1,6 @@
 # 👋 Hi, I’m Amir
 
-Welcome to my GitHub! I'm a **Certified Network Administrator** with over 5 years of experience in optimizing and securing networks. My expertise lies in **network automation** (Ansible, Docker), **routing and switching** (Cisco), and **firewall configurations** (OPNsense, FortiGate).
+Welcome to my GitHub! I'm a **Certified Network Administrator** with over 5 years of experience in optimizing and securing networks. My expertise lies in **network automation** (Ansible, Docker), **routing and switching** (Cisco, Fortinet), and **firewall configurations** (OPNsense, FortiGate).
 
 ---
 
@@ -13,9 +13,8 @@ Welcome to my GitHub! I'm a **Certified Network Administrator** with over 5 year
 ---
 
 ## 📂 Featured Projects
-- **Docker Media Server**: Automated media server setup with Emby and Traefik for reverse proxying. [View Repository](#)
-- **Ansible Playbooks**: Streamlining network device configurations and updates. [View Repository](#)
-- **Nextcloud on OPNsense**: Deployed a secure Nextcloud server in a segmented DMZ using OPNsense. [View Repository](#)
+- **Docker Container Compose Files**: My current Docker Compose configurations, updated periodically. [View Repository](https://github.com/amirstechport/amirstechport/tree/main/Docker/Docker%20Container%20Compose%20YAML)
+- **Ansible Playbooks**: Configuration and inventory files for automating network devices. [View Repository](https://github.com/amirstechport/amirstechport/tree/main/Ansible)
 
 ---
 
