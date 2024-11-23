@@ -23,4 +23,4 @@ ansible-playbook -i /home/ansible/sample.ini /home/ansible/update.yml
 - **`update.yml`:** Ansible playbook containing the tasks required to update the servers.
 
 Feel free to modify both `sample.ini` and `update.yml` to match your specific server configuration and update needs.
-```
+
