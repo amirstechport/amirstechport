@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @amirstechport
+- 👋 Hi, I’m Amir
 - 👀 I’m interested in ... Tech lol and i still love video production
 - 🌱 I’m currently learning ... FCP Administrator
 - 📫 How to reach me ... @amirstechport
