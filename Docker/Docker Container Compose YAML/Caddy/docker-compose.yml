@@ -8,8 +8,8 @@ services:
       - 80:80
       - 443:443
       - 443:443/udp
-    volumes:
-      - /home/caddy/caddy/Caddyfile:/etc/caddy/Caddyfile
+    volumes: # Change volume path left of ":" to match your path on host machine
+      - /home/caddy/caddy/Caddyfile:/etc/caddy/Caddyfile 
       - /home/caddy/caddy/site:/srv
       - /home/caddy/caddy/caddy_data:/data
       - /home/caddy/caddy/caddy_config:/config
