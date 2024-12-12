@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install_docker.sh - A script to install the latest Docker on Ubuntu Server
-# Author: YourName
+# Author: amirstechport
 # License: MIT
 
 set -e  # Exit immediately if a command exits with a non-zero status
