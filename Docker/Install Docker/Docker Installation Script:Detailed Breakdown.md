@@ -61,7 +61,7 @@ echo -e "${GREEN}Installation complete! Please log out and log back in to use Do
     Clone the script from your GitHub repository or download it directly:
     
     ```bash
-    wget https://raw.githubusercontent.com/YourUsername/YourRepo/main/install_docker.sh
+    wget https://github.com/amirstechport/amirstechport/blob/main/Docker/Install%20Docker/install_docker.sh
     ```
     
 2. **Make the Script Executable**:
