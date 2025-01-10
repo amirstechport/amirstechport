@@ -5,7 +5,7 @@ Welcome to my GitHub! I'm a **Certified Network Administrator** with over 5 year
 ---
 
 ## 🌟 About Me
-- 🔍 **Currently Learning**: FCP Administrator certification (Fortinet)
+- 🔍 **Currently Learning**: FCP Administrator certification (Fortinet), Studying Intro to Kubernetes on edX
 - 🎥 **Previous Career**: Video production professional turned networking enthusiast
 - ⚡ **Fun Fact**: I couldn’t make it as a Layer 7 coder, but I excel in setting up networks to deliver Layer 7 services seamlessly!
 - 💡 **Interests**: Tech automation, network security, and media systems
