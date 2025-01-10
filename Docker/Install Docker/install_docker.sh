@@ -1,16 +1,15 @@
 #!/bin/bash
 
-# install_docker.sh - A script to install the latest Docker on Ubuntu Server
+# install_docker.sh - A script to install the latest Docker and Docker Compose on Ubuntu Server
 # Author: amirstechport
 # License: MIT
 
-set -e  # Exit immediately if a command exits with a non-zero status
-set -u  # Treat unset variables as an error
+set -e
+set -u
 
-# Colors for output
 GREEN='\033[0;32m'
 RED='\033[0;31m'
-NC='\033[0m'  # No Color
+NC='\033[0m'
 
 echo -e "${GREEN}Updating package index...${NC}"
 sudo apt update && sudo apt upgrade -y
@@ -27,8 +26,8 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] 
 echo -e "${GREEN}Updating package index to include Docker repository...${NC}"
 sudo apt update
 
-echo -e "${GREEN}Installing the latest Docker Engine...${NC}"
-sudo apt install -y docker-ce docker-ce-cli containerd.io
+echo -e "${GREEN}Installing Docker Engine and Docker Compose Plugin...${NC}"
+sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 echo -e "${GREEN}Enabling and starting Docker service...${NC}"
 sudo systemctl enable docker
@@ -37,6 +36,9 @@ sudo systemctl start docker
 echo -e "${GREEN}Verifying Docker installation...${NC}"
 sudo docker --version
 sudo docker run hello-world
+
+echo -e "${GREEN}Verifying Docker Compose installation...${NC}"
+docker compose version
 
 echo -e "${GREEN}Adding current user to the Docker group (optional)...${NC}"
 sudo usermod -aG docker $USER
