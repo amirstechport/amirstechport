@@ -6,10 +6,10 @@ services:
     image: mariadb:10.11
     container_name: ghost_db
     environment:
-      MYSQL_ROOT_PASSWORD:  uniquepassword  # Root password for MariaDB
+      MYSQL_ROOT_PASSWORD:  unique_password  # Root password for MariaDB
       MYSQL_DATABASE: ghost                  # Database name for Ghost
       MYSQL_USER: ghost_u                 # Username for Ghost to connect
-      MYSQL_PASSWORD: changepassword       # Password for ghost_user
+      MYSQL_PASSWORD: same_but_changepassword       # Password for ghost_user
     volumes:
       - /home/ubuntu/docker/ghost/db:/var/lib/mysql  # Change to your Directory for Persistent storage for MariaDB data
     #ports:
@@ -23,7 +23,7 @@ services:
       database__client: mysql
       database__connection__host: ghost_db        # MariaDB container name as the host
       database__connection__user: ghost_u      # Username as defined in mariadb service
-      database__connection__password: changepassword  # Password as defined in mariadb service
+      database__connection__password: same_but_changepassword  # Password as defined in mariadb service
       database__connection__database: ghost       # Database name for Ghost
       url: https:/example.com               # URL for the Ghost application
     volumes:
