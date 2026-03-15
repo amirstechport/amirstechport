@@ -16,7 +16,7 @@ Welcome to my GitHub! I am a **NOC Engineer II** focused on bridging the gap bet
 
 ## 📂 Featured Repositories & Projects
 - **[homelab-iac](https://github.com/amirstechport/homelab-iac)**: Infrastructure as Code for my personal environment. Contains my deployment scripts, Docker Compose files, and API automation for my OPNsense, Proxmox, and Omada stack.
-- **Enterprise NetDevOps Concepts**: Demonstrations of Python automation, Webhook listeners, and state management for large-scale network deployments. *(Note: Code from professional projects like Network-Pulse or SiteBase remains private).*
+- **Enterprise NetDevOps Concepts**: Demonstrations of Python automation, Webhook listeners, and state management for large-scale network deployments.
 
 ---
 
