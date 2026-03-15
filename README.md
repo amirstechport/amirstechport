@@ -1,20 +1,22 @@
 # 👋 Hi, I’m Amir
 
-Welcome to my GitHub! I'm a **Certified Network Administrator** with over 5 years of experience in optimizing and securing networks. My expertise lies in **network automation** (Ansible, Docker), **routing and switching** (Cisco), and **firewall configurations** (OPNsense, FortiGate).
+Welcome to my GitHub! I am a **NOC Engineer II** focused on bridging the gap between traditional networking and modern automation. My expertise lies in **NetDevOps**, **enterprise routing and switching**, and building **Python-based automation tools** to manage networks at scale. 
 
 ---
 
 ## 🌟 About Me
-- 🔍 **Currently Learning**: FCP Administrator certification (Fortinet), Studying Intro to Kubernetes on edX
-- 🎥 **Previous Career**: Video production professional turned networking enthusiast
-- ⚡ **Fun Fact**: I couldn’t make it as a Layer 7 coder, but I excel in setting up networks to deliver Layer 7 services seamlessly!
-- 💡 **Interests**: Tech automation, network security, and media systems
+- 🔭 **Current Role**: NOC Engineer II, specializing in infrastructure operations, REST API integrations, and custom network dashboards (Streamlit/Python).
+- 🎥 **Previous Experience**: Video production professional turned Wireless Install Technician, where I architected and deployed enterprise hardware in the field.
+- 🎓 **Certifications**: Cisco Certified Network Associate (CCNA) - *Active*
+- 🔍 **Currently Learning**: Studying for the Certified Wireless Network Administrator (CWNA) exam.
+- ⚡ **Fun Fact**: I couldn’t make it as a Layer 7 coder, but I excel in setting up the network infrastructure to deliver Layer 7 services seamlessly!
+- 💡 **Interests**: Tech automation, network security, and self-hosted media systems.
 
 ---
 
-## 📂 Featured Projects
-- **Docker Container Compose Files**: My current Docker Compose configurations, updated periodically. [View Repository](https://github.com/amirstechport/amirstechport/tree/main/Docker/Docker%20Container%20Compose%20YAML)
-- **Ansible Playbooks**: Configuration and inventory files for automating network devices. [View Repository](https://github.com/amirstechport/amirstechport/tree/main/Ansible)
+## 📂 Featured Repositories & Projects
+- **[homelab-iac](https://github.com/amirstechport/homelab-iac)**: Infrastructure as Code for my personal environment. Contains my deployment scripts, Docker Compose files, and API automation for my OPNsense, Proxmox, and Omada stack.
+- **Enterprise NetDevOps Concepts**: Demonstrations of Python automation, Webhook listeners, and state management for large-scale network deployments. *(Note: Code from professional projects like Network-Pulse or SiteBase remains private).*
 
 ---
 

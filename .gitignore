@@ -8,3 +8,7 @@ desktop.ini
 
 # Temporary files
 *.tmp
+
+# AI/Agent Documentation
+CLAUDE.md
+AGENT_GOVERNANCE.md
