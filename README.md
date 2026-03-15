@@ -7,7 +7,10 @@ Welcome to my GitHub! I am a **NOC Engineer II** focused on bridging the gap bet
 ## 🌟 About Me
 - 🔭 **Current Role**: NOC Engineer II, specializing in infrastructure operations, REST API integrations, and custom network dashboards (Streamlit/Python).
 - 🎥 **Previous Experience**: Video production professional turned Wireless Install Technician, where I architected and deployed enterprise hardware in the field.
-- 🎓 **Certifications**: Cisco Certified Network Associate (CCNA) - *Active*
+- 🎓 **Certifications**:
+  - **CCNA**: Cisco Certified Network Associate (*Active*)
+  - **Kubernetes**: edX Intro to Kubernetes (2025)
+  - **AI**: Cisco AI Technical Practitioner (2026)
 - 🔍 **Currently Learning**: Studying for the Certified Wireless Network Administrator (CWNA) exam.
 - ⚡ **Fun Fact**: I couldn’t make it as a Layer 7 coder, but I excel in setting up the network infrastructure to deliver Layer 7 services seamlessly!
 - 💡 **Interests**: Tech automation, network security, and self-hosted media systems.
